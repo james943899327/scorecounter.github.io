@@ -1,0 +1,205 @@
+.topnav {
+  text-align: center;
+  background-image: linear-gradient(rgb(56, 189, 248), rgb(59, 130, 246));
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  position: static;
+  grid-template-columns: 4;
+  grid-template-rows: 3;
+}
+
+.my-scores {
+  padding: 8px 23px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #0318dd;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  display: inline;
+}
+
+.my-scores:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.my-scores:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.Spirit-Cup {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  justify-content: space-around;
+  text-align: center;
+  flex:1
+}
+
+.Teams {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: cursive;
+}
+
+.team-1,
+.team-1-spirit {
+  color: #ff0000;
+}
+
+.team-2,
+.team-2-spirit {
+  color: #2dcf17;
+}
+
+.team-3,
+.team-3-spirit {
+  color: #ad00bd;
+}
+
+.team-4,
+.team-4-spirit {
+  color: #ffbb00;
+}
+
+.button-red,
+.button-green,
+.button-purple,
+.button-yellow {
+  outline: 0;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 16px;
+  border-radius: .50rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.button-red {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.button-green {
+  color: #2dcf17;
+  border-color: #2dcf17;
+}
+
+.button-purple {
+  color: #ad00bd;
+  border-color: #ad00bd;
+}
+
+.button-yellow {
+  color: #ffbb00;
+  border-color: #ffbb00;
+}
+
+.reset-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  outline: 0;
+  color: #ffbb00;
+  border-color: #ffbb00;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 16px;
+  border-radius: .50rem;
+}
+
+.button-red:hover {
+  cursor: pointer;
+  outline: 0;
+  color: #ffffff;
+  border-color: #ff0000;
+  background-color: #ff0000;
+}
+
+.button-green:hover {
+  cursor: pointer;
+  outline: 0;
+  color: #ffffff;
+  background-color: #2dcf17;
+  border-color: #2dcf17;
+}
+
+.button-purple:hover {
+  cursor: pointer;
+  outline: 0;
+  color: #ffffff;
+  background-color: #ad00bd;
+  border-color: #ad00bd;
+}
+
+.button-yellow:hover {
+  cursor: pointer;
+  outline: 0;
+  color: #ffffff;
+  background-color: #ffbb00;
+  border-color: #ffbb00;
+}
+
+.score-1,
+.score-2,
+.score-3,
+.score-4 {
+  color: #000000;
+  border-color: #000000;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 16px;
+  font-family: cursive;
+  border-radius: .50rem;
+}
+
+body {
+  background-image: linear-gradient(to right, rgb(56, 189, 248), rgb(0, 55, 145));
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .Teams {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-red,
+  .button-green,
+  .button-purple,
+  .button-yellow,
+  .button-red.new-buttons,
+  .button-green.new-buttons,
+  .button-purple.new-buttons,
+  .button-yellow.new-buttons {
+    width: 100%;
+  }
+}
+
+
