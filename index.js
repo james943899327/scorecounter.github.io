@@ -1,4 +1,3 @@
-// Initialize scores for each team
 let redScore = 0;
 let greenScore = 0;
 let purpleScore = 0;
@@ -13,7 +12,7 @@ function resetScore() {
   // Show a confirmation dialog
   const confirmation = window.confirm("Reset all scores?");
 
-  // If the user confirms, reset the scores
+  // If user confirms, reset the scores
   if (confirmation) {
     // Reset scores for the original buttons
     document.getElementById('red-score').textContent = '0';
@@ -41,7 +40,7 @@ function resetScore() {
   }
 }
 
-// Add an event listener to trigger the resetScore function on a button click
+// Event listener to trigger the resetScore function on a button click
 document.getElementById('reset-button').addEventListener('click', resetScore);
 
 function addScore(teamId, points) {
@@ -83,7 +82,7 @@ function addScore(teamId, points) {
       currentScore = yellowScoreSpirit;
       break;
     default:
-      return; // Do nothing if teamId is not recognized
+      return;
   }
 
   // Calculate the new score and update the display
@@ -119,16 +118,11 @@ function addScore(teamId, points) {
   }
 }
 
-
-
-
-
-
 function finaliseScores() {
 
 const finalScoresURL = './scoreboard.html';
 
-const newWindow = finalScoresURL;
+const newWindow = window.open(finalScoresURL, '_blank');
 
 
 if (newWindow) {
