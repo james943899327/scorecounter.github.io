@@ -139,8 +139,6 @@ newWindow.document.write('<h2>Green Gladiators Score: ' + greenScore + '</h2>');
 newWindow.document.write('<h2>Purple Dragons Score: ' + purpleScore + '</h2>');
 newWindow.document.write('<h2>Yellow Lightning Score: ' + yellowScore + '</h2>');
 
-newWindow.document.write('                                                  </h2>')
-
 newWindow.document.write('<h2>Red Devils (Spirit Cup): ' + redScoreSpirit + '</h2>');
 newWindow.document.write('<h2>Green Gladiatorss (Spirit Cup): ' + greenScoreSpirit + '</h2>');
 newWindow.document.write('<h2>Purple Dragons (Spirit Cup): ' + purpleScoreSpirit + '</h2>');
