@@ -17,7 +17,7 @@ h1 {
 }
 
 .my-scores {
-  padding: 8px 23px;
+  padding: 9px 23px;
   border-radius: 100px;
   background-color: #0318dd;
   color: #ffffff;
@@ -50,7 +50,6 @@ h1 {
 
 .Teams {
   display: flex;
-
   bottom: 0;
   font-weight: bold;
   transition: all 0.5s;
@@ -93,7 +92,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 25px;
+  padding: 12px 23px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -108,7 +107,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 25px;
+  padding: 12px 23px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -119,12 +118,11 @@ h1 {
   color: #ad00bd;
   border-color: #ad00bd;
 
-  bottom: 20px;
   right: 20px;outline: 0;
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 25px;
+  padding: 12px 23px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -139,7 +137,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 25px;
+  padding: 12px 23px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -150,8 +148,8 @@ h1 {
   border-color: #ffbb00;
 
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 700px;
   outline: 0;
   font-weight: 400;
   text-align: center;
