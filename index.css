@@ -1,18 +1,19 @@
 .topnav {
   text-align: center;
   background-image: linear-gradient(rgb(56, 189, 248), rgb(59, 130, 246));
-  padding-bottom: 25px;
-  padding-top: 25px;
   border-radius: 10px;
+  margin-top: auto;
 }
+
+
+
+
 
 h1 {
   color: rgb(255, 255, 255);
-  font-family: cursive;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 5px;
   margin-top: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
   position: static;
   grid-template-columns: 4;
   grid-template-rows: 3;
@@ -20,29 +21,23 @@ h1 {
 
 .my-scores {
   padding: 8px 23px;
-  border: 0;
   border-radius: 100px;
   background-color: #0318dd;
   color: #ffffff;
   font-weight: bold;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
   display: inline;
+  
 }
 
 .my-scores:hover {
-  background-color: #6fc5ff;
-  box-shadow: 0 0 20px #6fc5ff50;
-  transform: scale(1.1);
+  cursor: pointer;
+  outline: 0;
+  color: #ffffff;
+  background-color: #0318dd;
+  border-color: #0318dd;
 }
 
-.my-scores:active {
-  background-color: #3d94cf;
-  transition: all 0.25s;
-  -webkit-transition: all 0.25s;
-  box-shadow: none;
-  transform: scale(0.98);
-}
 
 .Spirit-Cup {
   display: flex;
@@ -60,7 +55,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  font-family: cursive;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .team-1,
@@ -83,7 +78,7 @@ h1 {
   color: #ffbb00;
 }
 
-.button-red,
+
 .button-green,
 .button-purple,
 .button-yellow {
@@ -98,8 +93,19 @@ h1 {
 }
 
 .button-red {
+  bottom: 20px;
+  right: 20px;outline: 0;
   color: #ff0000;
   border-color: #ff0000;
+  background-color: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  padding: 24px 24px;
+  font-size: 24px;
+  border-radius: .50rem;
+
+  
 }
 
 .button-green {
@@ -130,6 +136,7 @@ h1 {
   padding: 16px 24px;
   font-size: 24px;
   border-radius: .50rem;
+  
 }
 
 .button-red:hover {
@@ -180,11 +187,12 @@ h1 {
   color: #000000;
   border-color: #000000;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 5;
   text-align: center;
   padding: 12px 12px;
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: bold;
   border-radius: .50rem;
 }
 
