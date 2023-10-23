@@ -122,7 +122,7 @@ function finaliseScores() {
 
 const finalScoresURL = './scoreboard.html';
 
-const newWindow = window.open(finalScoresURL, '_blank');
+const newWindow = window.open(finalScoresURL, './scoreboard.html');
 
 
 if (newWindow) {
@@ -134,7 +134,7 @@ newWindow.document.write('<h2>Purple Dragons Score: ' + purpleScore + '</h2>');
 newWindow.document.write('<h2>Yellow Lightning Score: ' + yellowScore + '</h2>');
 
 newWindow.document.write('<h2>Red Devils (Spirit Cup): ' + redScoreSpirit + '</h2>');
-newWindow.document.write('<h2>Green Gladiatorss (Spirit Cup): ' + greenScoreSpirit + '</h2>');
+newWindow.document.write('<h2>Green Gladiators (Spirit Cup): ' + greenScoreSpirit + '</h2>');
 newWindow.document.write('<h2>Purple Dragons (Spirit Cup): ' + purpleScoreSpirit + '</h2>');
 newWindow.document.write('<h2>Yellow Lightning (Spirit Cup): ' + yellowScoreSpirit + '</h2>');
 
@@ -145,7 +145,4 @@ newWindow.document.write('<h2>Yellow Lightning (Spirit Cup): ' + yellowScoreSpir
 
 
 }
-
-
-
 
