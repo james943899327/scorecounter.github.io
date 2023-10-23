@@ -50,9 +50,15 @@ h1 {
 
 .Teams {
   display: flex;
+
+  bottom: 0;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   justify-content: space-around;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  flex:1;
+
 }
 
 .team-1,
@@ -222,6 +228,12 @@ body {
     align-items: center;
   }
 
+
+  .Spirit-Cup {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .button-red,
   .button-green,
   .button-purple,
@@ -232,4 +244,6 @@ body {
   .button-yellow.new-buttons {
     width: 100%;
   }
+
+
 }
