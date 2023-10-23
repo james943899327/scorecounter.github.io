@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport">
@@ -18,97 +17,99 @@
         }
     </style>
 </head>
-
 <body>
     <div class="topnav">
         <img src="./images/Blakeview JPG.jpg" alt="Blakeview Image" style="width: 100px; height: 100px;">
         <h1>Blakeview Sports Day</h1>
-        <button class="my-scores" href="./scoreboard.html" , onclick="finaliseScores()">My Scores</button>
+        <button class="my-scores" href="./scoreboard.html" onclick="finaliseScores()">My Scores</button>
     </div>
+    
     <div class="Teams">
         <div class="team-1">
             <h2 class="team-1">Red Devils</h2>
             <div class="button-red">
-                <button class="button-red" type="button" onclick="addScore('red-score',1)">1</button>
-                <button class="button-red" type="button" onclick="addScore('red-score',2)">2</button>
-                <button class="button-red" type="button" onclick="addScore('red-score',3)">3</button>
+                <button class="button-red" type="button" onclick="addScore('red-score', 1)">1</button>
+                <button class="button-red" type="button" onclick="addScore('red-score', 2)">2</button>
+                <button class="button-red" type="button" onclick="addScore('red-score', 3)">3</button>
             </div>
             <div class="score-1" id="red-score">0</div>
         </div>
+        
         <div class="team-2">
             <h2 class="team-2">Green Gladiators</h2>
             <div class="button-green">
-                <button class="button-green" type="button" onclick="addScore('green-score',1)">1</button>
-                <button class="button-green" type="button" onclick="addScore('green-score',2)">2</button>
-                <button class="button-green" type="button" onclick="addScore('green-score',3)">3</button>
+                <button class="button-green" type="button" onclick="addScore('green-score', 1)">1</button>
+                <button class="button-green" type="button" onclick="addScore('green-score', 2)">2</button>
+                <button class="button-green" type="button" onclick="addScore('green-score', 3)">3</button>
             </div>
-            <div class="score-2" id="green-score">0</div>
+            <div class ="score-2" id="green-score">0</div>
         </div>
+
         <div class="team-3">
             <h2 class="team-3">Purple Dragons</h2>
             <div class="button-purple">
-                <button class="button-purple" type="button" onclick="addScore('purple-score',1)">1</button>
-                <button class="button-purple" type="button" onclick="addScore('purple-score',2)">2</button>
-                <button class="button-purple" type="button" onclick="addScore('purple-score',3)">3</button>
+                <button class="button-purple" type="button" onclick="addScore('purple-score', 1)">1</button>
+                <button class="button-purple" type="button" onclick="addScore('purple-score', 2)">2</button>
+                <button class="button-purple" type="button" onclick="addScore('purple-score', 3)">3</button>
             </div>
             <div class="score-3" id="purple-score">0</div>
         </div>
+
         <div class="team-4">
             <h2 class="team-4">Yellow Lightning</h2>
             <div class="button-yellow">
-                <button class="button-yellow" type="button" onclick="addScore('yellow-score',1)">1</button>
-                <button class="button-yellow" type="button" onclick="addScore('yellow-score',2)">2</button>
-                <button class="button-yellow" type="button" onclick="addScore('yellow-score',3)">3</button>
+                <button class="button-yellow" type="button" onclick="addScore('yellow-score', 1)">1</button>
+                <button class="button-yellow" type="button" onclick="addScore('yellow-score', 2)">2</button>
+                <button class="button-yellow" type="button" onclick="addScore('yellow-score', 3)">3</button>
             </div>
             <div class="score-4" id="yellow-score">0</div>
             <button class="reset-button" type="button" onclick="resetScore()">Reset Scores</button>
         </div>
+
         
-        <!-- Spirit Cup buttons in separate div classes -->
         <div class="Spirit-Cup">
             <div class="team-1-spirit">
                 <h2 class="team-1">Red Devils (Spirit Cup)</h2>
                 <div class="button-red">
-                    <button class="button-red" type="button" onclick="addScore('red-score-spirit',1)">1</button>
-                    <button class="button-red" type="button" onclick="addScore('red-score-spirit',2)">2</button>
-                    <button class="button-red" type="button" onclick="addScore('red-score-spirit',3)">3</button>
+                    <button class="button-red" type="button" onclick="addScore('red-score-spirit', 1)">1</button>
+                    <button class="button-red" type="button" onclick="addScore('red-score-spirit', 2)">2</button>
+                    <button class="button-red" type="button" onclick="addScore('red-score-spirit', 3)">3</button>
                 </div>
                 <div class="score-1" id="red-score-spirit">0</div>
             </div>
-    
+
             <div class="team-2-spirit">
                 <h2 class="team-2">Green Gladiators (Spirit Cup)</h2>
                 <div class="button-green">
-                    <button class="button-green" type="button" onclick="addScore('green-score-spirit',1)">1</button>
-                    <button class="button-green" type="button" onclick="addScore('green-score-spirit',2)">2</button>
-                    <button class="button-green" type="button" onclick="addScore('green-score-spirit',3)">3</button>
+                    <button class="button-green" type="button" onclick="addScore('green-score-spirit', 1)">1</button>
+                    <button class="button-green" type="button" onclick="addScore('green-score-spirit', 2)">2</button>
+                    <button class="button-green" type="button" onclick="addScore('green-score-spirit', 3)">3</button>
                 </div>
                 <div class="score-2" id="green-score-spirit">0</div>
             </div>
-    
+
             <div class="team-3-spirit">
                 <h2 class="team-3">Purple Dragons (Spirit Cup)</h2>
                 <div class="button-purple">
-                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit',1)">1</button>
-                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit',2)">2</button>
-                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit',3)">3</button>
+                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit', 1)">1</button>
+                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit', 2)">2</button>
+                    <button class="button-purple" type="button" onclick="addScore('purple-score-spirit', 3)">3</button>
                 </div>
                 <div class="score-3" id="purple-score-spirit">0</div>
             </div>
-    
+
             <div class="team-4-spirit">
                 <h2 class="team-4">Yellow Lightning (Spirit Cup)</h2>
                 <div class="button-yellow">
-                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit',1)">1</button>
-                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit',2)">2</button>
-                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit',3)">3</button>
+                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit', 1)">1</button>
+                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit', 2)">2</button>
+                    <button class="button-yellow" type="button" onclick="addScore('yellow-score-spirit', 3)">3</button>
                 </div>
                 <div class="score-4" id="yellow-score-spirit">0</div>
             </div>
         </div>
     </div>
-
+    
     <footer></footer>
 </body>
-
 </html>
