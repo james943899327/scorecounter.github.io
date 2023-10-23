@@ -92,7 +92,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 23px;
+  padding: 12px 20px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -107,7 +107,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 23px;
+  padding: 12px 20px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -122,7 +122,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 23px;
+  padding: 12px 20px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -137,7 +137,7 @@ h1 {
   background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 23px;
+  padding: 12px 20px;
   font-size: 24px;
   border-radius: .50rem;
 
@@ -146,18 +146,17 @@ h1 {
 .reset-button {
   color: #ffbb00;
   border-color: #ffbb00;
-
+  
   position: fixed;
   bottom: 15px;
-  right: 700px;
-  outline: 0;
-  font-weight: 400;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 400;  
   padding: 16px 24px;
   font-size: 24px;
   border-radius: .50rem;
-  
 }
+
 
 .button-red:hover {
   cursor: pointer;
@@ -225,9 +224,6 @@ body {
     align-items: center;
   }
 
-  .Spirit-Cup {
-    align-items: center;
-  }
 
   .button-red,
   .button-green,
@@ -242,3 +238,5 @@ body {
 
 
 }
+
+
