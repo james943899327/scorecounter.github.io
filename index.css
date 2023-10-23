@@ -223,14 +223,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  .Teams {
-    flex-direction: column;
+  .Teams {    
     align-items: center;
   }
 
-
   .Spirit-Cup {
-    flex-direction: column;
     align-items: center;
   }
 
