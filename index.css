@@ -6,9 +6,6 @@
 }
 
 
-
-
-
 h1 {
   color: rgb(255, 255, 255);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -79,59 +76,78 @@ h1 {
 }
 
 
-.button-green,
-.button-purple,
-.button-yellow {
-  outline: 0;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  padding: 24px 24px;
-  font-size: 24px;
-  border-radius: .50rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
+
 
 .button-red {
-  bottom: 20px;
-  right: 20px;outline: 0;
   color: #ff0000;
   border-color: #ff0000;
+
+  bottom: 20px;
+  right: 20px;outline: 0;
   background-color: none;
   font-weight: 400;
-  line-height: 1.5;
   text-align: center;
-  padding: 24px 24px;
+  padding: 12px 25px;
   font-size: 24px;
   border-radius: .50rem;
 
-  
 }
 
 .button-green {
   color: #2dcf17;
   border-color: #2dcf17;
+
+  bottom: 20px;
+  right: 20px;outline: 0;
+  background-color: none;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 25px;
+  font-size: 24px;
+  border-radius: .50rem;
+
 }
+
 
 .button-purple {
   color: #ad00bd;
   border-color: #ad00bd;
+
+  bottom: 20px;
+  right: 20px;outline: 0;
+  background-color: none;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 25px;
+  font-size: 24px;
+  border-radius: .50rem;
+
 }
 
 .button-yellow {
   color: #ffbb00;
   border-color: #ffbb00;
+
+  bottom: 20px;
+  right: 20px;outline: 0;
+  background-color: none;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 25px;
+  font-size: 24px;
+  border-radius: .50rem;
+
 }
 
 .reset-button {
+  color: #ffbb00;
+  border-color: #ffbb00;
+
   position: fixed;
   bottom: 20px;
   right: 20px;
   outline: 0;
-  color: #ffbb00;
-  border-color: #ffbb00;
   font-weight: 400;
-  line-height: 1.5;
   text-align: center;
   padding: 16px 24px;
   font-size: 24px;
@@ -187,9 +203,8 @@ h1 {
   color: #000000;
   border-color: #000000;
   font-weight: 400;
-  line-height: 5;
   text-align: center;
-  padding: 12px 12px;
+  padding: 12px 25px;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
   font-style: bold;
