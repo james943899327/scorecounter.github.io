@@ -5,47 +5,53 @@
   margin-top: auto;
 }
 
-
 h1 {
-  color: rgb(255, 255, 255);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-bottom: 5px;
-  margin-top: 10px;
-  position: static;
-  grid-template-columns: 4;
-  grid-template-rows: 3;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 0px;
+  margin-right: 120px;
+  }
+
+h2 {
+  margin: 1px;
 }
 
 .my-scores {
   padding: 9px 23px;
   border-radius: 100px;
   background-color: #0318dd;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
   transition: all 0.5s;
   display: inline;
-  
+  margin-right: 120px;
 }
 
 .my-scores:hover {
+  
   cursor: pointer;
-  outline: 0;
   color: #ffffff;
   background-color: #0318dd;
   border-color: #0318dd;
 }
 
+.score-1,
+.score-2,
+.score-3,
+.score-4 {
 
-.Spirit-Cup {
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  font-weight: bold;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  justify-content: space-around;
-  text-align: center;
-  flex:1
+  font-weight: 400;
+  line-height: 0;
+  padding: 20px 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: bold;
+  
+}
+
+
+.team-1, .team-2, .team-3, .team-4 {
+  font-size: 20px;
 }
 
 .Teams {
@@ -56,162 +62,268 @@ h1 {
   -webkit-transition: all 0.5s;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
   flex:1;
 
+  border-radius:.50rem;
+  padding: 12px 20px;
+  font-size: 20px;
+  
+  
 }
 
-.team-1,
-.team-1-spirit {
-  color: #ff0000;
+.Spirit-Cup { 
+
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  justify-content: space-around;
+  text-align: center;
+  flex:1;
+  margin-bottom: 150px;
+  align-items: center;
+
+  border-radius:.50rem;
+  padding: 0px 0px;
+  font-size: 20px;
+  
+  
+}
+  
+
+
+.team-1, .team-1-spirit {
+  color: #e41c1c;
 }
 
-.team-2,
-.team-2-spirit {
+.team-2, .team-2-spirit {
   color: #2dcf17;
+  
 }
 
-.team-3,
-.team-3-spirit {
+.team-3, .team-3-spirit {
   color: #ad00bd;
 }
 
-.team-4,
-.team-4-spirit {
+.team-4, .team-4-spirit {
   color: #ffbb00;
 }
 
-
-
-
-.button-red {
-  color: #ff0000;
-  border-color: #ff0000;
-
+.button-red1, .button-red2, .button-red3 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
   bottom: 20px;
-  right: 20px;outline: 0;
-  background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 19px;
-  font-size: 24px;
-  border-radius: .50rem;
 
+  color:#e41c1c;
+  border-color: #e41c1c;
 }
 
-.button-green {
-  color: #2dcf17;
-  border-color: #2dcf17;
-
+.button-green1, .button-green2, .button-green3 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
   bottom: 20px;
-  right: 20px;outline: 0;
-  background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 19px;
-  font-size: 24px;
-  border-radius: .50rem;
 
+  color:#2dcf17;
+  border-color:#2dcf17;
 }
 
-
-.button-purple {
-  color: #ad00bd;
-  border-color: #ad00bd;
-
-  right: 20px;outline: 0;
-  background-color: none;
-  font-weight: 400;
-  text-align: center;
-  padding: 12px 19px;
-  font-size: 24px;
+.button-purple1, .button-purple2, .button-purple3 {
   border-radius: .50rem;
-
-}
-
-.button-yellow {
-  color: #ffbb00;
-  border-color: #ffbb00;
-
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
   bottom: 20px;
-  right: 20px;outline: 0;
-  background-color: none;
   font-weight: 400;
   text-align: center;
-  padding: 12px 19px;
-  font-size: 24px;
-  border-radius: .50rem;
 
+  color:#ad00bd;
+  border-color:#ad00bd;
 }
+
+
+.button-yellow1, .button-yellow2, .button-yellow3 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  color:#ffbb00;
+  border-color:#ffbb00;
+}
+
+.button-red4, .button-red5, .button-red6 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  color:#e41c1c;
+  border-color: #e41c1c;
+}
+
+.button-green4, .button-green5, .button-green6 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  color:#2dcf17;
+  border-color:#2dcf17;
+}
+
+.button-purple4, .button-purple5, .button-purple6 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  color:#ad00bd;
+  border-color:#ad00bd;
+}
+
+.button-yellow4, .button-yellow5, .button-yellow6 {
+  border-radius: .50rem;
+  padding: 12px 20px;
+  font-size: 24px;
+  outline: 0;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+
+  color:#ffbb00;
+  border-color:#ffbb00;
+}
+
+
 
 .reset-button {
   color: #ffbb00;
   border-color: #ffbb00;
-  
   position: fixed;
   bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  font-weight: 400;  
+  font-weight: 400;
   padding: 16px 24px;
   font-size: 24px;
-  border-radius: .50rem;
+  border-radius: 0.5rem;
 }
 
 
-.button-red:hover {
+
+/* Comment */
+
+
+.button:hover, .reset-button:hover {
   cursor: pointer;
-  outline: 0;
-  color: #ffffff;
-  border-color: #ff0000;
-  background-color: #ff0000;
+  border-color: #ffbb00;
 }
 
-.button-green:hover {
+.button-red1:hover, .button-red2:hover, .button-red3:hover {
+  background-color: #e41c1c;
   cursor: pointer;
-  outline: 0;
-  color: #ffffff;
+  color: #fff;
+  border-color: #e41c1c;
+   
+}
+
+.button-green1:hover, .button-green2:hover, .button-green3:hover {
   background-color: #2dcf17;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
   border-color: #2dcf17;
 }
 
-.button-purple:hover {
-  cursor: pointer;
-  outline: 0;
-  color: #ffffff;
+.button-purple1:hover, .button-purple2:hover, .button-purple3:hover {
   background-color: #ad00bd;
-  border-color: #ad00bd;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+  border-color: #ad00bd
 }
 
-.button-yellow:hover {
-  cursor: pointer;
-  outline: 0;
-  color: #ffffff;
+.button-yellow1:hover, .button-yellow2:hover, .button-yellow3:hover {
   background-color: #ffbb00;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
   border-color: #ffbb00;
 }
+
+
+
+
+
+
+
+.button-red4:hover, .button-red5:hover, .button-red6:hover {
+  background-color: #e41c1c;
+  cursor: pointer;
+  color: #fff;
+  border-color: #e41c1c;
+   
+}
+
+.button-green4:hover, .button-green5:hover, .button-green6:hover {
+  background-color: #2dcf17;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+  border-color: #2dcf17;
+}
+
+.button-purple4:hover, .button-purple5:hover, .button-purple6:hover {
+  background-color: #ad00bd;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+  border-color: #ad00bd
+}
+
+.button-yellow4:hover, .button-yellow5:hover, .button-yellow6:hover {
+  background-color: #ffbb00;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 0.5rem;
+  border-color: #ffbb00;
+}
+
 
 .reset-button:hover {
-  cursor: pointer;
-  outline: 0;
-  color: #ffffff;
   background-color: #ffbb00;
-  border-color: #ffbb00;
-}
-
-
-.score-1,
-.score-2,
-.score-3,
-.score-4 {
-  color: #000000;
-  border-color: #000000;
-  font-weight: 400;
-  line-height: 0;
-  padding: 25px 25px;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: bold;
-  border-radius: .50rem;
+  color:#fff;
 }
 
 body {
@@ -220,23 +332,19 @@ body {
 }
 
 @media (max-width: 768px) {
-  .Teams {    
+  .Teams {
+    align-items: center;
+  }
+
+  .Spirit-Cup {
     align-items: center;
   }
 
 
-  .button-red,
-  .button-green,
-  .button-purple,
-  .button-yellow,
-  .button-red.new-buttons,
-  .button-green.new-buttons,
-  .button-purple.new-buttons,
-  .button-yellow.new-buttons {
+
+
+
+  .button, .reset-button {
     width: 100%;
   }
-
-
 }
-
-
