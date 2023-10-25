@@ -3,6 +3,7 @@
   background-image: linear-gradient(rgb(56, 189, 248), rgb(59, 130, 246));
   border-radius: 10px;
   margin-top: auto;
+  
 }
 
 h1 {
@@ -12,8 +13,17 @@ h1 {
   margin-right: 120px;
   }
 
-h2 {
-  margin: 1px;
+.SpiritCup {
+
+position: relative;
+left: 160px;
+top: 240px;
+font-weight: 400;
+font-size: 20px;
+color: yellow;
+font-weight:bold;
+align-items: center;
+
 }
 
 .my-scores {
@@ -44,55 +54,50 @@ h2 {
   line-height: 0;
   padding: 20px 20px;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman';
   font-style: bold;
   
 }
-
 
 .team-1, .team-2, .team-3, .team-4 {
   font-size: 20px;
 }
 
 .Teams {
+  
   display: flex;
-  bottom: 0;
   font-weight: bold;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   justify-content: space-around;
   text-align: center;
-  align-items: center;
   flex:1;
 
-  border-radius:.50rem;
-  padding: 12px 20px;
+  border-radius:.50rem; 
   font-size: 20px;
+
+  padding: 12px 20px;
+
+  position: relative;
   
-  
-}
+  }
 
 .Spirit-Cup { 
-
-  display: flex;
-  position: absolute;
-  bottom: 0;
+  
+  display:flex;
   font-weight: bold;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   justify-content: space-around;
   text-align: center;
   flex:1;
-  margin-bottom: 150px;
   align-items: center;
 
+  margin-top: 40px;  
   border-radius:.50rem;
-  padding: 0px 0px;
-  font-size: 20px;
-  
+  padding: 12px 20px;
   
 }
-  
 
 
 .team-1, .team-1-spirit {
@@ -121,7 +126,7 @@ h2 {
   bottom: 20px;
   font-weight: 400;
   text-align: center;
-
+  
   color:#e41c1c;
   border-color: #e41c1c;
 }
@@ -131,8 +136,7 @@ h2 {
   padding: 12px 20px;
   font-size: 24px;
   outline: 0;
-  right: 20px;
-  bottom: 20px;
+
   font-weight: 400;
   text-align: center;
 
@@ -153,7 +157,6 @@ h2 {
   color:#ad00bd;
   border-color:#ad00bd;
 }
-
 
 .button-yellow1, .button-yellow2, .button-yellow3 {
   border-radius: .50rem;
@@ -226,7 +229,6 @@ h2 {
 }
 
 
-
 .reset-button {
   color: #ffbb00;
   border-color: #ffbb00;
@@ -236,10 +238,9 @@ h2 {
   transform: translateX(-50%);
   font-weight: 400;
   padding: 16px 24px;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 0.5rem;
 }
-
 
 
 /* Comment */
@@ -283,17 +284,11 @@ h2 {
 }
 
 
-
-
-
-
-
 .button-red4:hover, .button-red5:hover, .button-red6:hover {
   background-color: #e41c1c;
   cursor: pointer;
   color: #fff;
   border-color: #e41c1c;
-   
 }
 
 .button-green4:hover, .button-green5:hover, .button-green6:hover {
@@ -340,10 +335,11 @@ body {
     align-items: center;
   }
 
-
-
-
-
+  .SpiritCup {
+    
+   align-items: center;
+    
+  }
   .button, .reset-button {
     width: 100%;
   }
