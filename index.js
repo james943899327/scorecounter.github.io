@@ -9,30 +9,30 @@ let purpleScoreSpirit = 0;
 let yellowScoreSpirit = 0;
 
 function resetScore() {
-  // Show a confirmation dialog
+
   const confirmation = window.confirm("Reset all scores?");
 
-  // If user confirms, reset the scores
+  
   if (confirmation) {
-    // Reset scores for the original buttons
+    
     document.getElementById('red-score').textContent = '0';
     document.getElementById('green-score').textContent = '0';
     document.getElementById('purple-score').textContent = '0';
     document.getElementById('yellow-score').textContent = '0';
 
-    // Reset scores for the new buttons (spirit cup)
+    
     document.getElementById('red-score-spirit').textContent = '0';
     document.getElementById('green-score-spirit').textContent = '0';
     document.getElementById('purple-score-spirit').textContent = '0';
     document.getElementById('yellow-score-spirit').textContent = '0';
 
-    // Reset the score variables for the original buttons
+    
     redScore = 0;
     greenScore = 0;
     purpleScore = 0;
     yellowScore = 0;
 
-    // Reset the score variables for the new buttons (spirit cup)
+   
     redScoreSpirit = 0;
     greenScoreSpirit = 0;
     purpleScoreSpirit = 0;
@@ -40,11 +40,11 @@ function resetScore() {
   }
 }
 
-// Event listener to trigger the resetScore function on a button click
+
 document.getElementById('reset-button').addEventListener('click', resetScore);
 
 function addScore(teamId, points) {
-  // Determine which team to update based on teamId
+  
   let teamElement;
   let currentScore;
 
@@ -119,30 +119,234 @@ function addScore(teamId, points) {
 }
 
 function finaliseScores() {
+  const finalScoresURL = './scoreboard.html';
+  const newWindow = window.open(finalScoresURL, '_blank');
+  
+  // Get current date and time
+  const currentDate = new Date().toLocaleDateString();
+  const currentTime = new Date().toLocaleTimeString();
 
-const finalScoresURL = './scoreboard.html';
+  // Calculate total scores
+  const totalScores = {
+    red: redScore + redScoreSpirit,
+    green: greenScore + greenScoreSpirit,
+    purple: purpleScore + purpleScoreSpirit,
+    yellow: yellowScore + yellowScoreSpirit
+  };
 
-const newWindow = window.open(finalScoresURL, './scoreboard.html');
+  // Find winner
+  const winner = Object.entries(totalScores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+  const winnerMap = {
+    red: 'Red Devils',
+    green: 'Green Gladiators',
+    purple: 'Purple Dragons',
+    yellow: 'Yellow Lightning'
+  };
 
-
-if (newWindow) {
-
-newWindow.document.open();
-newWindow.document.write('<h2>Red Devils Score: ' + redScore + '</h2>');
-newWindow.document.write('<h2>Green Gladiators Score: ' + greenScore + '</h2>');
-newWindow.document.write('<h2>Purple Dragons Score: ' + purpleScore + '</h2>');
-newWindow.document.write('<h2>Yellow Lightning Score: ' + yellowScore + '</h2>');
-
-newWindow.document.write('<h2>Red Devils (Spirit Cup): ' + redScoreSpirit + '</h2>');
-newWindow.document.write('<h2>Green Gladiators (Spirit Cup): ' + greenScoreSpirit + '</h2>');
-newWindow.document.write('<h2>Purple Dragons (Spirit Cup): ' + purpleScoreSpirit + '</h2>');
-newWindow.document.write('<h2>Yellow Lightning (Spirit Cup): ' + yellowScoreSpirit + '</h2>');
-
+  if (newWindow) {
+    newWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Sports Day Scorecard</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            color: #1e293b;
+          }
+          
+          .scorecard {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          
+          .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+          }
+          
+          .header h1 {
+            color: #1e3a8a;
+            margin: 0 0 10px 0;
+            font-size: 32px;
+          }
+          
+          .header p {
+            color: #64748b;
+            margin: 5px 0;
+          }
+          
+          .scores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+          }
+          
+          .team-score {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+          }
+          
+          .team-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+          
+          .score-detail {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid #e2e8f0;
+          }
+          
+          .total-score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e2e8f0;
+          }
+          
+          .winner-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f0f9ff;
+            border-radius: 12px;
+          }
+          
+          .winner-section h2 {
+            color: #1e3a8a;
+            margin: 0 0 10px 0;
+          }
+          
+          .winner-section p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0284c7;
+            margin: 0;
+          }
+          
+          .red { color: #ef4444; }
+          .green { color: #22c55e; }
+          .purple { color: #a855f7; }
+          .yellow { color: #eab308; }
+          
+          @media print {
+            body {
+              background: white;
+            }
+            .scorecard {
+              box-shadow: none;
+              margin: 0;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="scorecard">
+          <div class="header">
+            <h1>Blakeview Sports Day</h1>
+            <p>Final Scores</p>
+            <p>Date: ${currentDate} | Time: ${currentTime}</p>
+          </div>
+          
+          <div class="scores-grid">
+            <div class="team-score">
+              <div class="team-name red">Red Devils</div>
+              <div class="score-detail">
+                <span>Main Competition:</span>
+                <span>${redScore}</span>
+              </div>
+              <div class="score-detail">
+                <span>Spirit Cup:</span>
+                <span>${redScoreSpirit}</span>
+              </div>
+              <div class="total-score">
+                Total: ${totalScores.red}
+              </div>
+            </div>
+            
+            <div class="team-score">
+              <div class="team-name green">Green Gladiators</div>
+              <div class="score-detail">
+                <span>Main Competition:</span>
+                <span>${greenScore}</span>
+              </div>
+              <div class="score-detail">
+                <span>Spirit Cup:</span>
+                <span>${greenScoreSpirit}</span>
+              </div>
+              <div class="total-score">
+                Total: ${totalScores.green}
+              </div>
+            </div>
+            
+            <div class="team-score">
+              <div class="team-name purple">Purple Dragons</div>
+              <div class="score-detail">
+                <span>Main Competition:</span>
+                <span>${purpleScore}</span>
+              </div>
+              <div class="score-detail">
+                <span>Spirit Cup:</span>
+                <span>${purpleScoreSpirit}</span>
+              </div>
+              <div class="total-score">
+                Total: ${totalScores.purple}
+              </div>
+            </div>
+            
+            <div class="team-score">
+              <div class="team-name yellow">Yellow Lightning</div>
+              <div class="score-detail">
+                <span>Main Competition:</span>
+                <span>${yellowScore}</span>
+              </div>
+              <div class="score-detail">
+                <span>Spirit Cup:</span>
+                <span>${yellowScoreSpirit}</span>
+              </div>
+              <div class="total-score">
+                Total: ${totalScores.yellow}
+              </div>
+            </div>
+          </div>
+          
+          <div class="winner-section">
+            <h2>Overall Winner</h2>
+            <p>${winnerMap[winner]}</p>
+          </div>
+        </div>
+      </body>
+      </html>
+    `);
+    
+    newWindow.document.close();
+  }
 }
 
 
 
 
 
-}
+
+
+
+
 
