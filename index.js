@@ -1,3 +1,4 @@
+
 let redScore = 0;
 let greenScore = 0;
 let purpleScore = 0;
@@ -340,13 +341,3 @@ function finaliseScores() {
     newWindow.document.close();
   }
 }
-
-
-
-
-
-
-
-
-
-
