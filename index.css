@@ -1,4 +1,4 @@
-
+/* Modern gradient background */
 body {
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
 }
 
-
+/* Header styling */
 .topnav {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -48,7 +48,7 @@ body {
   transform: translateY(-1px);
 }
 
-
+/* Spirit Cup header */
 .SpiritCup {
   text-align: center;
   position: static;
@@ -62,7 +62,7 @@ body {
   margin: 0;
 }
 
-
+/* Teams container */
 .Teams,
 .Spirit-Cup {
   display: grid;
@@ -72,7 +72,7 @@ body {
   padding: 0 20px;
 }
 
-
+/* Team cards */
 .team-1,
 .team-2,
 .team-3,
@@ -92,7 +92,11 @@ body {
 .team-1 h2,
 .team-2 h2,
 .team-3 h2,
-.team-4 h2 {
+.team-4 h2,
+.team-1-spirit h2,
+.team-2-spirit h2,
+.team-3-spirit h2,
+.team-4-spirit h2 {
   font-size: 22px;
   margin: 0 0 20px 0;
 }
@@ -109,7 +113,7 @@ body {
   padding: 10px;
 }
 
-
+/* Button containers */
 .button-red,
 .button-green,
 .button-purple,
@@ -121,7 +125,7 @@ body {
   margin: 15px 0;
 }
 
-
+/* All buttons - square style */
 .button-red1,
 .button-red2,
 .button-red3,
@@ -163,19 +167,23 @@ body {
 }
 
 /* Team-specific colors */
-.team-1 h2 {
+.team-1 h2,
+.team-1-spirit h2 {
   color: #ef4444;
 }
 
-.team-2 h2 {
+.team-2 h2,
+.team-2-spirit h2 {
   color: #22c55e;
 }
 
-.team-3 h2 {
+.team-3 h2,
+.team-3-spirit h2 {
   color: #a855f7;
 }
 
-.team-4 h2 {
+.team-4 h2,
+.team-4-spirit h2 {
   color: #eab308;
 }
 
@@ -288,7 +296,7 @@ body {
   transform: scale(0.95);
 }
 
-
+/* Reset button */
 .reset-button {
   position: fixed;
   bottom: 30px;
