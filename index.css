@@ -1,4 +1,4 @@
-/* Modern gradient background */
+
 body {
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
 }
 
-/* Header styling */
+
 .topnav {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
@@ -48,7 +48,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* Spirit Cup header */
+
 .SpiritCup {
   text-align: center;
   position: static;
@@ -62,8 +62,9 @@ body {
   margin: 0;
 }
 
-/* Teams container */
-.Teams, .Spirit-Cup {
+
+.Teams,
+.Spirit-Cup {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -71,9 +72,15 @@ body {
   padding: 0 20px;
 }
 
-/* Team cards */
-.team-1, .team-2, .team-3, .team-4,
-.team-1-spirit, .team-2-spirit, .team-3-spirit, .team-4-spirit {
+
+.team-1,
+.team-2,
+.team-3,
+.team-4,
+.team-1-spirit,
+.team-2-spirit,
+.team-3-spirit,
+.team-4-spirit {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 12px;
   padding: 20px;
@@ -82,13 +89,19 @@ body {
 }
 
 /* Team headings */
-.team-1 h2, .team-2 h2, .team-3 h2, .team-4 h2 {
+.team-1 h2,
+.team-2 h2,
+.team-3 h2,
+.team-4 h2 {
   font-size: 22px;
   margin: 0 0 20px 0;
 }
 
 /* Score displays */
-.score-1, .score-2, .score-3, .score-4 {
+.score-1,
+.score-2,
+.score-3,
+.score-4 {
   font-size: 36px;
   font-weight: bold;
   margin: 20px 0;
@@ -96,35 +109,48 @@ body {
   padding: 10px;
 }
 
-/* Button containers - updated */
-.button-red, .button-green, .button-purple, .button-yellow {
+
+.button-red,
+.button-green,
+.button-purple,
+.button-yellow {
   display: flex;
-  gap: 8px;
+  gap: 15px;
   justify-content: center;
+  align-items: center;
   margin: 15px 0;
-  flex-wrap: wrap; /* Allows buttons to wrap on very small screens */
 }
 
-/* Score buttons base styles - updated with more specific selectors */
-[class^="button-red"],
-[class^="button-green"],
-[class^="button-purple"],
-[class^="button-yellow"],
-.button-red1, .button-red2, .button-red3,
-.button-red4, .button-red5, .button-red6,
-.button-green1, .button-green2, .button-green3,
-.button-green4, .button-green5, .button-green6,
-.button-purple1, .button-purple2, .button-purple3,
-.button-purple4, .button-purple5, .button-purple6,
-.button-yellow1, .button-yellow2, .button-yellow3,
-.button-yellow4, .button-yellow5, .button-yellow6 {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
-  background: transparent;
-  font-size: 16px;
+
+.button-red1,
+.button-red2,
+.button-red3,
+.button-red4,
+.button-red5,
+.button-red6,
+.button-green1,
+.button-green2,
+.button-green3,
+.button-green4,
+.button-green5,
+.button-green6,
+.button-purple1,
+.button-purple2,
+.button-purple3,
+.button-purple4,
+.button-purple5,
+.button-purple6,
+.button-yellow1,
+.button-yellow2,
+.button-yellow3,
+.button-yellow4,
+.button-yellow5,
+.button-yellow6 {
+  width: 75px;
+  height: 75px;
+  border: none;
+  border-radius: 8px;
+  font-size: 30px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
@@ -133,52 +159,136 @@ body {
   justify-content: center;
   padding: 0;
   margin: 0;
-  line-height: 1;
-  outline: none; /* Remove any outline that might be causing the issue */
+  color: white;
 }
 
-/* Remove any potential button default styles */
-button {
-  border-width: 2px !important; /* Force consistent border width */
-  outline: none;
-}
-/* Team-specific colors - keep these unchanged */
-.team-1 h2, [class^="button-red"] { color: #ef4444; border-color: #ef4444; }
-.team-2 h2, [class^="button-green"] { color: #22c55e; border-color: #22c55e; }
-.team-3 h2, [class^="button-purple"] { color: #a855f7; border-color: #a855f7; }
-.team-4 h2, [class^="button-yellow"] { color: #eab308; border-color: #eab308; }
-
-/* Button hover states - updated for smoother transition */
-[class^="button-red"]:hover { 
-  background-color: #ef4444; 
-  color: white; 
-  transform: translateY(-1px);
-}
-[class^="button-green"]:hover { 
-  background-color: #22c55e; 
-  color: white; 
-  transform: translateY(-1px);
-}
-[class^="button-purple"]:hover { 
-  background-color: #a855f7; 
-  color: white; 
-  transform: translateY(-1px);
-}
-[class^="button-yellow"]:hover { 
-  background-color: #eab308; 
-  color: white; 
-  transform: translateY(-1px);
+/* Team-specific colors */
+.team-1 h2 {
+  color: #ef4444;
 }
 
-/* Active state for better feedback */
-[class^="button-red"]:active,
-[class^="button-green"]:active,
-[class^="button-purple"]:active,
-[class^="button-yellow"]:active {
-  transform: translateY(0);
+.team-2 h2 {
+  color: #22c55e;
 }
 
-/* Reset button */
+.team-3 h2 {
+  color: #a855f7;
+}
+
+.team-4 h2 {
+  color: #eab308;
+}
+
+/* Red team buttons */
+.button-red1,
+.button-red2,
+.button-red3,
+.button-red4,
+.button-red5,
+.button-red6 {
+  background-color: #ef4444;
+}
+
+/* Green team buttons */
+.button-green1,
+.button-green2,
+.button-green3,
+.button-green4,
+.button-green5,
+.button-green6 {
+  background-color: #22c55e;
+}
+
+/* Purple team buttons */
+.button-purple1,
+.button-purple2,
+.button-purple3,
+.button-purple4,
+.button-purple5,
+.button-purple6 {
+  background-color: #a855f7;
+}
+
+/* Yellow team buttons */
+.button-yellow1,
+.button-yellow2,
+.button-yellow3,
+.button-yellow4,
+.button-yellow5,
+.button-yellow6 {
+  background-color: #eab308;
+}
+
+/* Hover states */
+.button-red1:hover,
+.button-red2:hover,
+.button-red3:hover,
+.button-red4:hover,
+.button-red5:hover,
+.button-red6:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+.button-green1:hover,
+.button-green2:hover,
+.button-green3:hover,
+.button-green4:hover,
+.button-green5:hover,
+.button-green6:hover {
+  background-color: #16a34a;
+  transform: scale(1.05);
+}
+
+.button-purple1:hover,
+.button-purple2:hover,
+.button-purple3:hover,
+.button-purple4:hover,
+.button-purple5:hover,
+.button-purple6:hover {
+  background-color: #9333ea;
+  transform: scale(1.05);
+}
+
+.button-yellow1:hover,
+.button-yellow2:hover,
+.button-yellow3:hover,
+.button-yellow4:hover,
+.button-yellow5:hover,
+.button-yellow6:hover {
+  background-color: #ca8a04;
+  transform: scale(1.05);
+}
+
+/* Active states */
+.button-red1:active,
+.button-red2:active,
+.button-red3:active,
+.button-red4:active,
+.button-red5:active,
+.button-red6:active,
+.button-green1:active,
+.button-green2:active,
+.button-green3:active,
+.button-green4:active,
+.button-green5:active,
+.button-green6:active,
+.button-purple1:active,
+.button-purple2:active,
+.button-purple3:active,
+.button-purple4:active,
+.button-purple5:active,
+.button-purple6:active,
+.button-yellow1:active,
+.button-yellow2:active,
+.button-yellow3:active,
+.button-yellow4:active,
+.button-yellow5:active,
+.button-yellow6:active {
+  transform: scale(0.95);
+}
+
+
 .reset-button {
   position: fixed;
   bottom: 30px;
@@ -209,12 +319,13 @@ button {
     gap: 15px;
     padding: 20px;
   }
-  
-  .Teams, .Spirit-Cup {
+
+  .Teams,
+  .Spirit-Cup {
     grid-template-columns: 1fr;
     padding: 0 10px;
   }
-  
+
   .reset-button {
     width: calc(100% - 40px);
     max-width: 300px;
