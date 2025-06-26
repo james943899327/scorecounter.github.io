@@ -119,7 +119,7 @@ body {
 .button-purple,
 .button-yellow {
   display: flex;
-  gap: 15px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
   margin: 15px 0;
@@ -150,8 +150,8 @@ body {
 .button-yellow4,
 .button-yellow5,
 .button-yellow6 {
-  width: 75px;
-  height: 75px;
+  width: 90px;
+  height: 90px;
   border: none;
   border-radius: 8px;
   font-size: 30px;
